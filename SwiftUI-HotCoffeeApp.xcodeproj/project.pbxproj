@@ -18,6 +18,9 @@
 		2D36EF9E26A97A440075AE1C /* SwiftUI_HotCoffeeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D36EF9D26A97A440075AE1C /* SwiftUI_HotCoffeeAppUITests.swift */; };
 		2D36EFB126AB8E6A0075AE1C /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D36EFB026AB8E6A0075AE1C /* NSManagedObjectContext+Extensions.swift */; };
 		2D36EFB926AB8F4A0075AE1C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D36EFB826AB8F4A0075AE1C /* CoreDataManager.swift */; };
+		2D36EFBF26AB91930075AE1C /* AddOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D36EFBE26AB91930075AE1C /* AddOrderViewModel.swift */; };
+		2D36EFC826AB91AA0075AE1C /* AddOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D36EFC726AB91AA0075AE1C /* AddOrderView.swift */; };
+		2D36EFD026AB9A6E0075AE1C /* OrderListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D36EFCF26AB9A6E0075AE1C /* OrderListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		2D36EF9F26A97A440075AE1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D36EFB026AB8E6A0075AE1C /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
 		2D36EFB826AB8F4A0075AE1C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		2D36EFBE26AB91930075AE1C /* AddOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewModel.swift; sourceTree = "<group>"; };
+		2D36EFC726AB91AA0075AE1C /* AddOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderView.swift; sourceTree = "<group>"; };
+		2D36EFCF26AB9A6E0075AE1C /* OrderListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +111,12 @@
 		2D36EF7726A97A420075AE1C /* SwiftUI-HotCoffeeApp */ = {
 			isa = PBXGroup;
 			children = (
+				2D36EFC326AB91960075AE1C /* Views */,
+				2D36EFBD26AB90C40075AE1C /* ViewModels */,
 				2D36EFAF26AB8E540075AE1C /* Extensions */,
 				2D36EFAE26A97C310075AE1C /* Manager */,
 				2D36EF7826A97A420075AE1C /* AppDelegate.swift */,
 				2D36EF7A26A97A420075AE1C /* SceneDelegate.swift */,
-				2D36EF7C26A97A420075AE1C /* ContentView.swift */,
 				2D36EF8126A97A440075AE1C /* Assets.xcassets */,
 				2D36EF8626A97A440075AE1C /* LaunchScreen.storyboard */,
 				2D36EF8926A97A440075AE1C /* Info.plist */,
@@ -159,6 +166,24 @@
 				2D36EFB026AB8E6A0075AE1C /* NSManagedObjectContext+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2D36EFBD26AB90C40075AE1C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2D36EFBE26AB91930075AE1C /* AddOrderViewModel.swift */,
+				2D36EFCF26AB9A6E0075AE1C /* OrderListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2D36EFC326AB91960075AE1C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2D36EF7C26A97A420075AE1C /* ContentView.swift */,
+				2D36EFC726AB91AA0075AE1C /* AddOrderView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,8 +319,11 @@
 				2D36EFB926AB8F4A0075AE1C /* CoreDataManager.swift in Sources */,
 				2D36EF7926A97A420075AE1C /* AppDelegate.swift in Sources */,
 				2D36EF8026A97A420075AE1C /* SwiftUI_HotCoffeeApp.xcdatamodeld in Sources */,
+				2D36EFD026AB9A6E0075AE1C /* OrderListViewModel.swift in Sources */,
 				2D36EF7B26A97A420075AE1C /* SceneDelegate.swift in Sources */,
 				2D36EF7D26A97A420075AE1C /* ContentView.swift in Sources */,
+				2D36EFC826AB91AA0075AE1C /* AddOrderView.swift in Sources */,
+				2D36EFBF26AB91930075AE1C /* AddOrderViewModel.swift in Sources */,
 				2D36EFB126AB8E6A0075AE1C /* NSManagedObjectContext+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
