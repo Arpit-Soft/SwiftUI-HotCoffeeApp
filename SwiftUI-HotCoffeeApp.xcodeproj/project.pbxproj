@@ -16,6 +16,8 @@
 		2D36EF8826A97A440075AE1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D36EF8626A97A440075AE1C /* LaunchScreen.storyboard */; };
 		2D36EF9326A97A440075AE1C /* SwiftUI_HotCoffeeAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D36EF9226A97A440075AE1C /* SwiftUI_HotCoffeeAppTests.swift */; };
 		2D36EF9E26A97A440075AE1C /* SwiftUI_HotCoffeeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D36EF9D26A97A440075AE1C /* SwiftUI_HotCoffeeAppUITests.swift */; };
+		2D36EFB126AB8E6A0075AE1C /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D36EFB026AB8E6A0075AE1C /* NSManagedObjectContext+Extensions.swift */; };
+		2D36EFB926AB8F4A0075AE1C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D36EFB826AB8F4A0075AE1C /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		2D36EF9926A97A440075AE1C /* SwiftUI-HotCoffeeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-HotCoffeeAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D36EF9D26A97A440075AE1C /* SwiftUI_HotCoffeeAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_HotCoffeeAppUITests.swift; sourceTree = "<group>"; };
 		2D36EF9F26A97A440075AE1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D36EFB026AB8E6A0075AE1C /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
+		2D36EFB826AB8F4A0075AE1C /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		2D36EF7726A97A420075AE1C /* SwiftUI-HotCoffeeApp */ = {
 			isa = PBXGroup;
 			children = (
+				2D36EFAF26AB8E540075AE1C /* Extensions */,
+				2D36EFAE26A97C310075AE1C /* Manager */,
 				2D36EF7826A97A420075AE1C /* AppDelegate.swift */,
 				2D36EF7A26A97A420075AE1C /* SceneDelegate.swift */,
 				2D36EF7C26A97A420075AE1C /* ContentView.swift */,
@@ -137,6 +143,22 @@
 				2D36EF9F26A97A440075AE1C /* Info.plist */,
 			);
 			path = "SwiftUI-HotCoffeeAppUITests";
+			sourceTree = "<group>";
+		};
+		2D36EFAE26A97C310075AE1C /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				2D36EFB826AB8F4A0075AE1C /* CoreDataManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		2D36EFAF26AB8E540075AE1C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2D36EFB026AB8E6A0075AE1C /* NSManagedObjectContext+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,10 +291,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D36EFB926AB8F4A0075AE1C /* CoreDataManager.swift in Sources */,
 				2D36EF7926A97A420075AE1C /* AppDelegate.swift in Sources */,
 				2D36EF8026A97A420075AE1C /* SwiftUI_HotCoffeeApp.xcdatamodeld in Sources */,
 				2D36EF7B26A97A420075AE1C /* SceneDelegate.swift in Sources */,
 				2D36EF7D26A97A420075AE1C /* ContentView.swift in Sources */,
+				2D36EFB126AB8E6A0075AE1C /* NSManagedObjectContext+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
